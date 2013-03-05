@@ -31,18 +31,62 @@
 			<div id="home">	
 				<header class="toolbar">
 					<h1>Project 4</h1>
-					<a class="button slideup" id="infoButton" href="#add">Add</a>
+					<a class="button slideup" id="infoButton" href="#add"><i class="icon-plus"></i></a>
 				</header>
+					<div id="page">
+						<div id="map" class="map"</div>
+					</div>
 			</div>
+			<!--HTML for the ADD LOCATION page-->
+			<div id="new">
+				<header class="toolbar">
+                    <h1>New Location</h1>
+                    <a class="back" href="#home">Map</a>
+                </header>
+                
+	        	<form action="id" id="new-location" class="scroll">
+                    <ul class="edit rounded">
+                        <li><input type="text" name="name" placeholder="Location Name" id="name"></li>
+                        <li><input type="text" name="street" placeholder="Street Address" id="street"></li>
+                        <li><input type="text" name="city" placeholder="City" id="city"></li>
+                        <li><input type="text" name="state" placeholder="St" id="state"></li>
+                        <li><input type="text" name="zip" placeholder="Zip Code" id="zip"></li>
+                    </ul>
+                    <div class="hidden-page">
+                    	<button class="submit redButton">Add Location</button>
+                    </div>
+                </form> 
+			</div>
+			<!--HTML for the EDIT page-->
+			<div id="edit">
+            	<header class="toolbar">
+                    <h1>Edit Location</h1>
+                    <a class="back" href="#home">Map</a>
+                </header>
+                <form action="id" id="edit-location" class="scroll">
+                    <ul class="edit rounded">
+                        <li><input type="text" name="name" placeholder="Location Name" id="name"></li>
+                        <li><input type="text" name="street" placeholder="Street Address" id="street"></li>
+                        <li><input type="text" name="city" placeholder="City" id="city"></li>
+                        <li><input type="text" name="state" placeholder="St" id="state"></li>
+                        <li><input type="text" name="zip" placeholder="Zip Code" id="zip"></li>
+                    </ul>
+                    <div class="hidden-page">
+                    	<button class="submit redButton">Add Location</button>
+                    </div>
+                </form>        		
+		    </div>
+			
 		</div>
     	
     	<script src="http:://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
 		</script>
         <script>
-			window.jQuery || document.write('<script 								src="assets/js/libs/jquery.js"><\/script>')</script>
+			window.jQuery || document.write('<script src="assets/js/libs/jquery.js"><\/script>')</script>
         <script src="assets/js/app.js" type="text/javascript"></script>
 		<script src="assets/jqtouch.js" type="text/javascript"></script>
 		<script src="assets/jqtouch-jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
 		<script src="assets/js/libs/localStorageDB/localStorageDB.js"></script>
     </body>
 </html>
