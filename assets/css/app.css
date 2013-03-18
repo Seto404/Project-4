@@ -6,6 +6,15 @@
 	box-sizing: border-box;
 }
 
+#map {
+	min-height: 300px;
+	width: 100%;
+	height: 100%;	
+}
+
+.hidden-page {
+	margin: 0 10px;
+
 .page {
 	-moz-box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0;
 	-webkit-box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0;
@@ -52,6 +61,7 @@
 	margin: 0 0 10px;
 }
 
+#jqt .scroll button,
 #jqt .page button {
 	display: block;
 	width: 99%;
